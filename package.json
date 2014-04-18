@@ -1,0 +1,13 @@
+{
+    "version": "0.0.1",
+    "name": "com.powerall.plugin.video",
+    "cordova_name": "VideoPlay",
+    "description": "auto video play plugin description",
+    "license": "Apache 2.0",
+    "keywords": [
+        "powerall",
+        "auto play",
+        "liujie"
+    ],
+    "engines": []
+}

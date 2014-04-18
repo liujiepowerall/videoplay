@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:rim="http://www.blackberry.com/ns/widgets"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.powerall.plugin.videoplay"
+    version="0.0.1">
+
+    <name>VideoPlayer</name>
+    <description>VideoPlayer plugin description</description>
+    <license>Apache 2.0</license>
+	<keywords>powerall,videoplay,powerall</keywords>
+
+	<js-module src="www/videoPlay.js" name="VideoPlayer">
+		<clobbers target="videoPlay" />
+	</js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="VideoPlayPlugin">
+                <param name="android-package" value="com.powerall.plugin.video.VideoPlayPlugin"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/VideoPlayPlugin.java" target-dir="src/com/powerall/plugin/video" />
+    </platform>  
+
+</plugin>
